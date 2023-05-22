@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: yellow;
+        }
+
+        div#flexbox {
+            border: 5px solid black;
+            margin: auto;
+            display: flex;
+            padding: 10px;
+        }
+
+        div.flexbox {
+            border: 5px solid black;
+            margin: auto;
+            padding: 10px;
+        }
+
+        div#one {
+            color: red;
+            background-color: blue;
+            font-style: italic;
+            font-size: 23px;
+        }
+
+        p#two {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 61px;
+
+            background-image: url(https://media.istockphoto.com/id/1291627052/es/vector/ilustraci%C3%B3n-de-patr%C3%B3n-geom%C3%A9trico-abstracto-colores-retro-y-fondo-blanco.jpg?s=612x612&w=is&k=20&c=tvWNeQV8JGrbwepQYTvzlJ9C1elUJh7xyjEdu08crho=);
+            background-position: center;
+            border: 4px solid green;
+            border-radius: 10%;
+            text-decoration: underline;
+            width: 500px;
+            height: 100px;
+
+        }
+
+        .btn {
+            background-color: blue;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            transition: ease-in;
+            border-radius: 10%;
+        }
+
+        h2#textborder {
+            border-color: blue;
+            border-width: .25em;
+        }
+
+        @keyframes harry1 {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 1400px;
+            }
+        }
+
+        .navbar {
+            background-color: greenyellow;
+            border-radius: 10%;
+            position: fixed;
+            opacity: 0.7;
+            box-shadow: 10px 10px gray;
+            margin: 50px 700px;
+            animation-name: harry1;
+            animation-duration: 8s;
+            animation-delay: 2s;
+            animation-iteration-count: 1;
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+
+        div.boxes {
+            border: 10px solid aqua;
+            width: 1000px;
+            padding: 10px 10px;
+            margin: 12px 3px;
+            overflow: auto;
+            display: block;
+            box-sizing: border-box;
+
+        }
+
+        div#first {
+            border: 5px solid black;
+            background-color: green;
+            width: 48%;
+            float: right;
+            text-align: justify;
+            z-index: 10;
+        }
+
+        a {
+            text-decoration: dotted;
+            color: black;
+        }
+
+        div.search {
+            margin: 100px;
+        }
+
+        a:hover {
+            color: brown;
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            transition: ease-in;
+
+        }
+
+        div#second {
+            background-color: goldenrod;
+            z-index: 20;
+            width: 30%;
+            position: absolute;
+        }
+
+        div#third {
+
+            float: right;
+            position: absolute;
+            left: 10px;
+            top: 900px;
+            color: aqua;
+            background-color: blue;
+            z-index: 1;
+
+        }
+
+        img:hover {
+            transform: rotate(45deg);
+            transition: all 0.5s ease-in
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-gap: 2rem;
+        }
+
+        @media (max-width: 600px) {
+          body {
+             background-color: lightgreen;
+              }
+                 };
+
+        
+    </style>
+    <title>First try</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">
+                        home </a>
+                </li>
+                <li><a href="#">
+                        tap 2</a>
+                </li>
+                <li><a href="#">
+                        tap3</a>
+                </li>
+                <div class="search"><input type="text" name="search" id="search" placeholder="search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <h1>First try</h1>
+    <div id=one>This is real time online HTML Editor</div>
+    <h1 id="textborder">
+        <p id=two>this is my para <br>good<br>
+    </h1>
+    </p>
+    <br>
+    <br>
+
+    <a href="https://www.littlefeatsindia.com/">
+        <h1>go to my site</h1>
+    </a><br><br>
+    <summary>khefhgireyvgiurehncoeighoghebiogchoei7</summary>
+    <img src="https://source.unsplash.com/random" alt="gm" width=100 height=70>
+    <br><br>
+    <H3>creating list</H3>
+    <ul type="circle">
+        <li>grand</li>
+        <li>venice</li>
+        <li>mall</li>
+    </ul>
+    <h3>creating table</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>pani</th>
+                <th>puri</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>chori</td>
+                <td>chori</td>
+            </tr>
+    </table>
+    <div id="form">
+        <form action="backend.php"></form>
+        <input type="text" name="email" value="enter your email">
+        <br> checkbox
+        <input type="checkbox" name="checkbox">
+        <br> radio
+        <input type="radio" name="fh"><input type="radio" name="jg">
+        <br>
+        <input type="submit" name="submit">
+        </form>
+
+    </div>
+    <div class="boxes">
+        <div id="first">
+            <h1>this is box 1 </h1>
+            rljnerngtnvbnvohnurgtoringnuoerhgo
+
+        </div>
+        <div id="second">
+            <h1>this is box 2</h1>
+            fepivnernveofnooononnon
+        </div>
+        <div id="third">
+            <h1>this is box 3</h1>
+            klhlkftufbditjfiijfcuyuygjyuitufgvyuiu
+        </div>
+    </div>
+    <div>
+        <h1>iheribvuievu</h1>
+        ojrenviobrtviuhrnuonhweorihgetogo
+    </div>
+    <button class="btn">contact us</button>
+    <div id="flexbox">
+        <h1>creating flex box</h1>
+        <div class="flexbox" id="box1">
+            this is box 1</div>
+        <div class="flexbox" id="box2">
+            this is box 2</div>
+        <div class="flexbox" id="box3">
+            this is box 3</div>
+    </div>
+    <h1 id=grid>creating a grid</h1>
+    <div class=" grid">
+        <div class="item">This is Item-1</div>
+        <div class="item">This is Item-2</div>
+        <div class="item">This is Item-3</div>
+        <div class="item">This is Item-4</div>
+        <div class="item">This is Item-5</div>
+        <div class="item">This is Item-6</div>
+        <div class="item">This is Item-7</div>
+        <div class="item">This is Item-8</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+    </div>
+
+
+
+
+</body>
+
+</html>
